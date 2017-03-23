@@ -1,22 +1,22 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { CellComponent } from './cell.component';
+import { TestcontentComponent } from './testcontent.component';
 
-describe('a cell component', () => {
-	let component: CellComponent;
+describe('a testcontent component', () => {
+	let component: TestcontentComponent;
 
 	// register all needed dependencies
 	beforeEach(() => {
 		TestBed.configureTestingModule({
 			providers: [
-				CellComponent
+				TestcontentComponent
 			]
 		});
 	});
 
 	// instantiation through framework injection
-	beforeEach(inject([CellComponent], (CellComponent) => {
-		component = CellComponent;
+	beforeEach(inject([TestcontentComponent], (TestcontentComponent) => {
+		component = TestcontentComponent;
 	}));
 
 	it('should have an instance', () => {

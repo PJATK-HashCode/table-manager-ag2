@@ -1,1 +1,6 @@
-<div class="tablemanager"> Hello TablemanagerComponent! </div>
+<div class="tablemanager">
+    <tablecontent *ngFor="let cell of _listOfCells"
+    [cell] = "cell"
+    >
+    </tablecontent>
+</div>

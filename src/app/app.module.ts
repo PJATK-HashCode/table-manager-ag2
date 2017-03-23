@@ -5,15 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { TablemanagerModule } from './tablemanager/tablemanager.module';
+
+import { TestContentComponent } from './testcontent/testcontent.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestContentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TablemanagerModule
   ],
+  entryComponents: [TestContentComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

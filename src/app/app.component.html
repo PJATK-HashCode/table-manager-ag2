@@ -1,1 +1,5 @@
-
+<input type="text" [(ngModel)]="x"/>
+<input type="text" [(ngModel)]="y"/>
+<input type="text" [(ngModel)]="content"/>
+<button (click)="newCell()">add cell</button>
+<tablemanager [addNewCell]="cell"></tablemanager>
