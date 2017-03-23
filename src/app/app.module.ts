@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { TablemanagerModule } from './tablemanager/tablemanager.module';
 
 import { TestContentComponent } from './testcontent/testcontent.component';
+import { Testcomponent2Component } from './testcomponent2/testcomponent2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestContentComponent
+    TestContentComponent,
+    Testcomponent2Component
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import { TestContentComponent } from './testcontent/testcontent.component';
     HttpModule,
     TablemanagerModule
   ],
-  entryComponents: [TestContentComponent],
+  entryComponents: [TestContentComponent, Testcomponent2Component],
   providers: [],
   bootstrap: [AppComponent]
 })

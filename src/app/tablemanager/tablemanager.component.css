@@ -1,4 +1,7 @@
 .tablemanager {
     position: relative;
     z-index:-1;
+    background-color: yellow;
+    width: 600px;
+    height: 600px;
 }
